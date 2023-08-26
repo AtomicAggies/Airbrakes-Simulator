@@ -1,0 +1,34 @@
+# Airbrakes Simulation Full Config File
+# This is a complete list of all posible keys and what they do in the simulator
+
+rocket:
+  # diameter of the rocket in mm
+  diameter: 151.13
+  # Some notes on mass:
+  # - empty mass is only the airframe
+  # - loaded engine is the mass of the casing and the propelant
+  # - propelant mass is the mass of the propelant without the casing
+  # mass of the empty rocket in kg
+  mass_empty: 22.36
+  # mass of the loaded engine in kg
+  engine_mass: 11.33
+  # mass of the propelant in kg
+  propellant_mass: 6.71
+  # thrust curve of the engine, relative file location
+  thrust_curve: Cesaroni_12066N2200-P.csv
+  # drag coefficient of the rocket
+  drag_coefficient: 0.445
+
+airbrakes:
+  # area of one fin in mm^2
+  area: 30
+  # number of fins
+  fins: 3
+  # drag coefficient of the fins
+  drag_coefficient: 0.88
+
+simulation:
+  # deployment altitude of the airbrakes in meters
+  deployment_altitude: 3000
+  # delta-time of the simulation in seconds
+  dt: 0.01
