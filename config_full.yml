@@ -32,3 +32,5 @@ simulation:
   deployment_altitude: 3000
   # delta-time of the simulation in seconds
   dt: 0.01
+  # accelerometer noise
+  accelerometer_noise: 0.01

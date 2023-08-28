@@ -17,6 +17,9 @@ rocket:
   thrust_curve: Cesaroni_12066N2200-P.csv
   # drag coefficient of the rocket
   drag_coefficient: 0.445
+  # accelerometer and barometer noise
+  accelerometer_noise: 0.01
+  barometer_noise: 0.01
 
 airbrakes:
   # area of one fin in mm^2
@@ -29,4 +32,3 @@ airbrakes:
 simulation:
   # deployment altitude of the airbrakes in meters
   deployment_altitude: 3000
-  # dt: 0.01
